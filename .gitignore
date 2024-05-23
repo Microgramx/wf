@@ -8,7 +8,7 @@
 .env
 package-lock.json
 backup
-dist
+
 live
 pwd
 gg.txt
