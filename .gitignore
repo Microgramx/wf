@@ -2,13 +2,11 @@
 .netlify
 
 # node modules
-**/node_modules
+/node_modules
 
 # other
-.env
 package-lock.json
 backup
-
 live
 pwd
 gg.txt
