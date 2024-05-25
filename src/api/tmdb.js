@@ -1,15 +1,14 @@
 /**
  * This file contains helper functions to use TheMovieDB API
  */
-
-const API_KEY = '45182786638fe524a433bd5af884766c'
+const API_KEY = process.env.TMDB_API_KEY;
 const baseImgUrl = "https://image.tmdb.org/t/p/";
 const baseUrl = "https://api.themoviedb.org/3";
 
 const API_ERROR_CODE = 7;
 const RESOURCE_NOT_FOUND = 34;
 
-const language =  localStorage.getItem('language') ? '&with_original_language='+ localStorage.getItem('language') : "";
+const language =  localStorage.getItem('language') ? '&language=pt-PT='+ localStorage.getItem('language') : "";
 
 /**
  * Takes the poster_path or backdrop_path value from the API and an optional
