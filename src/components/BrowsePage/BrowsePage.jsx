@@ -32,7 +32,7 @@ function BrowsePage({
       <>
       <Seo 
         title={`Browse movies ${genreTitle}`}
-        descriptions="Browse the collection of plenty of on-demand latest movies in HD for free."
+        descriptions="Navegue gratuitamente pela coleção de vários filmes mais recentes sob demanda em HD."
         />
         <Announcement />
         <h1>{`Browse movies ${genreTitle}`}</h1>
@@ -44,7 +44,7 @@ function BrowsePage({
       <>
         <Seo 
           title={`Browse TV shows ${genreTitle}`}
-          descriptions="Browse the collection of plenty of on-demand latest TV Shows in HD for free."
+          descriptions="Navegue pela coleção de vários programas de TV mais recentes sob demanda em HD gratuitamente."
         />
         <Announcement />
         <h1>{`Browse TV shows ${genreTitle}`}</h1>

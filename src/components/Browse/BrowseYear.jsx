@@ -22,7 +22,7 @@ function BrowseYear({
       render={() => (
         <section>
           <div className="yearbar">
-            <div id="yearbar-text">Search by year</div>
+            <div id="yearbar-text">Pesquisar por data</div>
             <Searchbar
               value={searchValue}
               search={search}

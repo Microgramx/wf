@@ -86,7 +86,7 @@ async function checkResponse(res) {
 }
 
 export function getNowPlayingMovies() {
-  const nowPlayingMovieUrl = `${baseUrl}/movie/now_playing?api_key=${API_KEY}&language=SE&page=1${language}`;
+  const nowPlayingMovieUrl = `${baseUrl}/movie/now_playing?api_key=${API_KEY}&page=1${language}`;
   return fetch(nowPlayingMovieUrl)
     .then(checkResponse)
     .then(json => json.results);
@@ -147,14 +147,14 @@ export async function getTVInfo(id) {
 }
 
 export function getMovieGenres() {
-  const genreUrl = `${baseUrl}/genre/movie/list?api_key=${API_KEY}&language=en-US`;
+  const genreUrl = `${baseUrl}/genre/movie/list?api_key=${API_KEY}&language=pt-PT`;
   return fetch(genreUrl)
     .then(checkResponse)
     .then(json => json.genres);
 }
 
 export function getShowGenres() {
-  const genreUrl = `${baseUrl}/genre/tv/list?api_key=${API_KEY}&language=en-US`;
+  const genreUrl = `${baseUrl}/genre/tv/list?api_key=${API_KEY}&language=pt-PT`;
   return fetch(genreUrl)
     .then(checkResponse)
     .then(json => json.genres);
@@ -176,7 +176,7 @@ export function getMoviesFromType(type, page = 1) {
 }
 
 export function getShowsFromType(type, page = 1) {
-  const moviesUrl = `${baseUrl}/tv/${type}?api_key=${API_KEY}&language=en-US&page=${page}${language}`;
+  const moviesUrl = `${baseUrl}/tv/${type}?api_key=${API_KEY}&page=${page}${language}`;
   return fetch(moviesUrl).then(checkResponse);
 }
 

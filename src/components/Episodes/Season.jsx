@@ -43,13 +43,13 @@ function Season({
   if (!seasonComplete) {
     seasonBtn = (
       <PrimaryButton onClick={() => setSeason(seasonNumber, true)}>
-         Add season
+        Add temporada
       </PrimaryButton>
     );
   } else {
     seasonBtn = (
       <SecondaryButton onClick={() => setSeason(seasonNumber, false)}>
-        Remove season
+        Del temporada
       </SecondaryButton>
     );
   }

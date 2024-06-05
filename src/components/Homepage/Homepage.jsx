@@ -81,7 +81,7 @@ function Homepage({
           <SignedOut>
           <div className="main-blog anim" style={{ "--delay": ".2s" }}>
             <div className="main-blog__title">
-                Discover the movies and TV shows and stream all free and unlimited.
+            Descubra os filmes e programas de TV e transmita tudo de forma gratuita e ilimitada.
             </div>
             <div className="main-blog__author">
               <div className="author-detail">
@@ -91,32 +91,32 @@ function Homepage({
                   <img class="author-img" src="https://i.imgur.com/pR1jZly.png" />
                 </div>
                 <div class="auth-detail">
-                  <div class="author-name">Yes, It's all free</div>
-                  <div class="author-info">HD Quality<span class="seperate"></span>CC<span class="seperate"></span>Watchlist</div>
+                  <div class="author-name">Sim, é tudo grátis</div>
+                  <div class="author-info">Chromecast<span class="seperate"></span>CC<span class="seperate"></span>Watchlist</div>
                 </div>
               </div>
               </div>
             </div>
             <div className="main-blog__time">
-              <Link className="buttongg" to="/movies/year/2022">
-                New Movies!
+              <Link className="buttongg" to="/movies/year/2024">
+              Lançamentos!
               </Link>
             </div>
           </div>
           <div className="main-blog anim" style={{ "--delay": ".1s" }}>
             <div className="main-blog__title">
-              If you like us share our site to your friends.
+            Se você gosta de nós, compartilhe nosso site com seus amigos.
             </div>
             <div className="main-blog__author">
               <div className="author-detail">
-                <div className="author-name">Join to our official telegram and discord groups </div>
+                <div className="author-name">Junte-se ao nosso grupo oficial de discord </div>
                 <div className="author-info">
-                  Invite Code <span className="seperate"></span> Freebies<span className="seperate"></span> Rewards
+                Código de convite<span className="seperate"></span> Brindes<span className="seperate"></span> Recompensas
                 </div>
               </div>
             </div>
              <div className="main-blog__time1">
-              <Link className="buttongg" to="https://t.me/+vekZX4KtMPtiYmRl">
+              <Link className="buttongg" to="#">
                 Telegram
               </Link>
             </div>
@@ -128,7 +128,7 @@ function Homepage({
           </div>
           </SignedOut>
         </div>
-      <h2>Now playing movies</h2>
+      <h2>Baseado em suas escolhas</h2>
         {loadingMovies && <LoadingGrid grid="true" />}
         {!loadingMovies && <PosterGrid movies={movies} view="grid" type="movie" /> }
       </section>
@@ -149,14 +149,14 @@ function Homepage({
         {!loadingKids && <PosterGrid movies={kids} view="grid" type="movie" /> }
         </section>
       <section>
-      <h2>Top Horror</h2>
+      <h2>Top Terror</h2>
         {loadingHorror && <LoadingGrid grid="true" />}
         {!loadingHorror && <PosterGrid movies={horror} view="grid" type="movie" /> }
       </section>
       <section>
         <div className="main-blogs">
           <div className="main-blog1">
-            <div className="main-blog__title">Keep updated what's happening!</div>
+            <div className="main-blog__title">Mantenha-se atualizado sobre o que está acontecendo!</div>
             <div className="main-blog__author tips">
               <div className="main-blog__time">
               
@@ -164,20 +164,20 @@ function Homepage({
               
               </div>
               <div className="author-detail">
-                <div className="author-name">All the info are here</div>
+                <div className="author-name">Todas as informações estão aqui</div>
                 <div className="author-info">
-                  Announcement<span className="seperate"></span>Fix & Issues<span className="seperate"></span>And More
+                  Comunicado<span className="seperate"></span>Fix & Issues<span className="seperate"></span>e mais
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h2>Now airing TV shows</h2>
+        <h2>Series no ar</h2>
         {loadingShows && <LoadingGrid grid="true" />}
         {!loadingShows && <PosterGrid movies={series} view="grid" type="tv" />}
       </section>
       <section>
-      <h2>Top Documentaries</h2>
+      <h2>Top Documentarios</h2>
         {loadingDocumentaries && <LoadingGrid grid="true" />}
         {!loadingDocumentaries && <PosterGrid movies={documentary} view="grid" type="tv" /> }
       </section>

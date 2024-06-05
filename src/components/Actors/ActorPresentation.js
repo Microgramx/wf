@@ -60,33 +60,33 @@ function ActorPresentation({ currentActor }) {
         />
         <h1 className="personal">Personal Information</h1>
 
-        <h2>Place of Birth</h2>
+        <h2>Local de nascimento</h2>
         <p>{currentActor.place_of_birth || "Not available"}</p>
 
-        <h2>Birthday</h2>
+        <h2>Aniversário</h2>
         <p>{currentActor.birthday || "Not available"}</p>
 
-        <h2>Known Credits</h2>
+        <h2>Créditos conhecidos</h2>
         <p>{knowncredits}</p>
 
-        <h2>Official Homepage</h2>
+        <h2>Página Oficial</h2>
         {currentActor.homepage ? (
           <a href={`${currentActor.homepage}`}>Link</a>
         ) : (
-          "Not available"
+          "Nao está disponivel"
         )}
 
-        <h2>Social Media</h2>
+        <h2>Rede Social</h2>
         {checkSocialMedia(currentActor.external_ids)}
       </div>
       <div className="main-info">
         <h1>{currentActor.name}</h1>
-        <h2>Biography</h2>
+        <h2>Biografia</h2>
         {currentActor.biography
           ? currentActor.biography
               .split("\n")
               .map(text => text && <p key={text}>{text}</p>)
-          : "Not available"}
+          : "Nao está disponivel"}
       </div>
     </div>
     </>

@@ -138,7 +138,7 @@ function DetailsTitle({ movie }) {
             {minutesToHours(episodeRunTime[0])} {" "}
           </span>
           <span class="video-p-data">
-            • {numberOfEpisodes} episodes, {numberOfSeasons} seasons{" "}
+            • {numberOfEpisodes} episódios, {numberOfSeasons} temporadas{" "}
           </span>
           <span class="video-p-data">• {status} </span>
           <span class="video-p-data">
